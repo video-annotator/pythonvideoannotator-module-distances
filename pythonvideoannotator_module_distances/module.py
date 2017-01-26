@@ -13,5 +13,5 @@ class Module(object):
 		self.distances_window = DistancesWindow(self)
 
 		self.mainmenu[1]['Modules'].append(
-			{'Distances': self.distances_window.show, 'icon':conf.ANNOTATOR_ICON_SMOOTH },			
+			{'Distances': self.distances_window.show, 'icon':conf.ANNOTATOR_ICON_DISTANCES },			
 		)
