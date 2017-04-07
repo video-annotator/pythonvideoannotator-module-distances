@@ -24,7 +24,12 @@ class DistancesWindow(BaseWidget):
 		super(DistancesWindow, self).__init__('Distances', parent_win=parent)
 		self.mainwindow = parent
 
-		self.layout().setMargin(5)
+		if conf.PYFORMS_USE_QT5:
+			self.layout().setContentsMargins(5,5,5,5)
+		else:
+			self.layout().setMargin(5)
+
+		#self.layout().setMargin(5)
 		self.setMinimumHeight(400)
 		self.setMinimumWidth(800)
 
