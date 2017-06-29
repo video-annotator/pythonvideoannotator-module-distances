@@ -101,7 +101,7 @@ class DistancesWindow(BaseWidget):
 						set2 = datasets[d2_index]
 
 						val = set1.object2d.create_value()
-						val.name = "distance between: {0} and {1}".format(set1.name, set2.name)
+						val.name = "distance-between ({0}) and ({1})".format(set1.name, set2.name)
 
 						for index in range(begin, end):	
 							if not self._apply.checked: break
