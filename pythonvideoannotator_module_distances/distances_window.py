@@ -1,11 +1,11 @@
 import pyforms
 from pysettings import conf
 from pyforms import BaseWidget
-from pyforms.Controls import ControlSlider
-from pyforms.Controls import ControlButton
-from pyforms.Controls import ControlEmptyWidget
-from pyforms.Controls import ControlProgress
-from pyforms.Controls import ControlImage
+from pyforms.controls import ControlSlider
+from pyforms.controls import ControlButton
+from pyforms.controls import ControlEmptyWidget
+from pyforms.controls import ControlProgress
+from pyforms.controls import ControlImage
 
 from pythonvideoannotator_models_gui.models.video.objects.object2d.utils import points as pts_utils
 from pythonvideoannotator_models_gui.dialogs import DatasetsDialog
@@ -24,10 +24,8 @@ class DistancesWindow(BaseWidget):
 		super(DistancesWindow, self).__init__('Distances', parent_win=parent)
 		self.mainwindow = parent
 
-		if conf.PYFORMS_USE_QT5:
-			self.layout().setContentsMargins(5,5,5,5)
-		else:
-			self.layout().setMargin(5)
+		self.set_margin(5)
+        
 
 		#self.layout().setMargin(5)
 		self.setMinimumHeight(400)
