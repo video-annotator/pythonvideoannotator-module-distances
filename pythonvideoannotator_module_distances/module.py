@@ -1,5 +1,5 @@
 import cv2
-from pysettings import conf
+from pyforms import conf
 from pythonvideoannotator_module_distances.distances_window import DistancesWindow
 
 
