@@ -1,6 +1,6 @@
 import pyforms
-from pyforms import conf
-from pyforms import BaseWidget
+from confapp import conf
+from pyforms.basewidget import BaseWidget
 from pyforms.controls import ControlSlider
 from pyforms.controls import ControlButton
 from pyforms.controls import ControlEmptyWidget
@@ -13,7 +13,7 @@ from pythonvideoannotator_models_gui.models.video.objects.object2d.datasets.path
 from pythonvideoannotator_models_gui.models.video.objects.object2d.datasets.contours import Contours
 
 import numpy as np, cv2
-from pyforms import conf
+from confapp import conf
 
 
 
